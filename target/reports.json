@@ -1,0 +1,71 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Add google Location",
+        "description": "",
+        "id": "google-api;add-google-location",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3312000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I want to add payload",
+            "match": {
+              "location": "GoogleSteps.i_want_to_add_payload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1535818300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user submit \"POST\" api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 12
+                }
+              ],
+              "location": "GoogleSteps.user_submit_api(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3348930700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user validate the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 33
+                }
+              ],
+              "location": "GoogleSteps.user_validate_the_status_code_is(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google API",
+    "description": "",
+    "id": "google-api",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Google.feature",
+    "tags": []
+  }
+]
